@@ -1,0 +1,337 @@
+/*- - - - Fotter - - - -*/
+
+#fotter {
+    display: block;
+    background: url('images/background-color.jpg') no-repeat left;
+    background-size: cover;
+    position: relative;
+    font-family: "montserrat", sans-serif;
+}
+
+.fotter_container {
+    width: 782px;
+    margin: auto;
+    padding: 5% 0px;
+}
+
+.fotter_contact {
+    width: 435px;
+    display: inline-block;
+}
+
+.fotter_contact h6,
+.fotter_adress h6 {
+    color: #eaeaea;
+    font-size: 23px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.fotter_content {
+    line-height: 30px;
+}
+
+#mail {
+    content: url("svgicons/mail.svg");
+}
+
+#phone {
+    content: url("svgicons/telephone.svg");
+}
+
+#location {
+    content: url("svgicons/location.svg");
+}
+
+#fotter_dog {
+    content: url("images/fotter_dog.png");
+}
+
+.fotter_contact img {
+    width: 20px;
+    display: inline-block;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.fotter_content p,
+.fotter_adress p {
+    color: #f7dab6;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.fotter_adress {
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+}
+
+
+.fotter_adress img {
+    width: 23px;
+    float: left;
+}
+
+#fotter #fotter_dog {
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    z-index: 3;
+}
+
+/* follow */
+
+#fotter {
+    /*position: re*/
+}
+
+#follow {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: "montserrat", sans-serif;
+}
+
+#fotter a:hover img {
+    background-color: rgb(247, 132, 117);
+}
+
+#follow img {
+    padding: 1px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.82);
+    transition: all 0.3s;
+}
+
+#follow a:not(:first-child) {
+    margin-left: 15px;
+}
+
+#follow p {
+    color: #ededed;
+    font-size: 16px;
+}
+
+/* copyright line */
+
+#copyright {
+    text-align: center;
+    color: #d2d2d2;
+    background-color: #242424;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-family: "montserrat", sans-serif;
+}
+
+
+
+
+/*  responsive  */
+
+@media only screen and (min-width:280px) and (max-width:1024px) {
+    /* fotter */
+    .fotter_container {
+        width: 690px;
+        padding: 3.5% 0px;
+    }
+    .fotter_contact {
+        width: 344px;
+    }
+    .fotter_contact h6 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 2%;
+    }
+
+    .fotter_contact img {
+        width: 24px;
+    }
+    .fotter_content p {
+        font-size: 14px;
+        margin-top: 1%
+    }
+    .fotter_content {
+        line-height: 26px;
+    }
+    .fotter_adress {
+        margin-left: 2%;
+    }
+    .fotter_adress h6 {
+        font-size: 23px;
+        margin-bottom: 2%;
+    }
+    .fotter_adress img {
+        width: 23px;
+    }
+    .fotter_adress p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    #fotter #fotter_dog {
+        width: 130px;
+        right: 8%;
+    }
+    #copyright {
+        padding: 8.5px 0px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:800px) {
+
+    /* fotter */
+    .fotter_container {
+        width: 404px;
+        padding: 3.5% 0px;
+        margin: auto;
+    }
+    .fotter_contact {
+        width: 218px;
+    }
+    .fotter_contact h6 {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 2%;
+    }
+    .fotter_content {
+        line-height: 26px;
+    }
+    .fotter_contact img {
+        width: 18px;
+    }
+    .fotter_content p {
+        font-size: 10px;
+        margin-top: 1%;
+        line-height: 22px;
+    }
+    .fotter_adress h6 {
+        font-size: 12px;
+        margin-top: 1%;
+        margin-bottom: 7%;
+    }
+    .fotter_adress img {
+        width: 23px;
+    }
+    .fotter_adress p {
+        line-height: 11px;
+        font-size: 9px;
+    }
+    #fotter #fotter_dog {
+        width: 105px;
+        right: 5%;
+    }
+    #copyright {
+        padding: 7.5px 0px;
+        font-size: 10px;
+    }
+    /* follow */
+    #follow {
+        padding-bottom: 4px;
+    }
+    #follow img {
+        width: 20px;
+    }
+    fotter a:not(:first-child) {
+        margin-left: 10px;
+    }
+    #follow p {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+    /* fotter */
+    #fotter {
+        background-image: url('images/background-color_low.jpg');
+    }
+    #fotter #fotter_dog {
+        width: 88px;
+        right: 3%;
+    }
+    .fotter_container {
+        width: 400px;
+    }
+    #fotter_dog {
+        content: url('images/fotter_dog_low.png');
+    }
+    #copyright {
+        padding: 8px 0px;
+        font-size: 8px;
+    }
+    /* follow */
+    #follow {
+        padding-bottom: 2px;
+    }
+    #follow img {
+        width: 18px;
+    }
+    fotter a:not(:first-child) {
+        margin-left: 7px !important;
+    }
+    #follow p {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width:280px) and (max-width:480px) {
+    /* fotter */
+    .fotter_container {
+        width: 261px;
+        padding: 2% 0px 5.5% 0px;
+    }
+    .fotter_contact {
+        width: 160px;
+    }
+    .fotter_contact h6 {
+        font-size: 8px;
+    }
+    .fotter_contact img {
+        width: 12px;
+    }
+    .fotter_content p {
+        font-size: 6px;
+        margin-top: 1%;
+        line-height: 14px;
+    }
+
+    .fotter_adress h6 {
+        font-size: 8px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .fotter_adress p {
+        line-height: 8px;
+        font-size: 6px;
+    }
+    #fotter #fotter_dog {
+        width: 66px;
+    }
+    .fotter_adress img {
+        width: 13px;
+    }
+    #copyright {
+        padding: 6.5px 0px;
+        font-size: 7px;
+    }
+    /* follow */
+    #follow {
+        padding-bottom: 1px;
+    }
+    #follow img {
+        width: 12px;
+    }
+    #fotter a:not(:first-child) {
+        margin-left: 5px !important;
+    }
+    #follow p {
+        font-size: 9px;
+    }
+}
